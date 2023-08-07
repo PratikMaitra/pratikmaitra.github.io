@@ -43,9 +43,9 @@
 
 					<li><a href="CV.pdf">My CV</a></li>
 
-					<li><a href="Publications.html">Publications</a></li>
-
 					<li><a href="Research.html">Research Interests</a></li>
+
+					<li><a href="Publications.html">Publications</a></li>
 
 					<!-- <li><a href="Hobbies.html">Hobbies</a></li> -->
 				</ul>
@@ -84,6 +84,9 @@
 					/* Allows the content to shrink */
 					overflow: hidden;
 					/* Hides any overflow */
+					text-align: justify;
+					/* Justify alignment*/
+
 				}
 
 				.highlight:first-child {
@@ -164,11 +167,20 @@
 					padding: 10px !important;
 					box-sizing: border-box !important;
 				}
-
+		
 				.box {
 					background-color: rgba(255, 255, 255, 0.8) !important;
 					padding: 20px !important;
 					box-sizing: border-box !important;
+					text-align: justify;
+				}
+				.inner h3 {
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+				.inner p,
+				.inner ul {
+					margin-top: 0;
 				}
 			</style>
 			<div class="container">
@@ -176,52 +188,44 @@
 					<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
 					<div class="inner">
 						<h3><u>Education</u></h3>
-						<p>
 						<ul>
-							<li>Jadavpur University (Bachelor`s in CS) 2013 - 2017</li>
-							<li>University of Iowa (Master`s in CS) 2021 - 2023</li>
+							<li>Jadavpur University (Bachelor's in CS) 2013 - 2017</li>
+							<li>University of Iowa (Master's in CS) 2021 - 2023</li>
 							<li>Iowa State University (Doctorate in CS) 2023 - ongoing</li>
 						</ul>
-						</p>
 					</div>
 				</div>
 				<div class="box">
 					<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
 					<div class="inner">
 						<h3><u>Grades</u></h3>
-						<p>
 						<ul>
 							<li>3.41 CGPA(ECE evaluation) at Jadavpur University</li>
 							<li>3.76 CGPA at University of Iowa</li>
 						</ul>
-						</p>
 					</div>
 				</div>
 				<div class="box">
 					<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
 					<div class="inner">
 						<h3><u>Relevant Research Experience</u></h3>
-						<p>
 						<ul>
 							<li>Research Project Intern at University of Iowa</li>
 							<li>Paid Summer Research Intern at the University of Iowa</li>
 							<li>Research Assistant at the University of Iowa</li>
 						</ul>
-						</p>
 					</div>
 				</div>
 				<div class="box">
 					<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
 					<div class="inner">
 						<h3><u>Volunteering</u></h3>
-						<p> I have particiapted in various fundraising activities for cyclone
-							afflicted districts of Bengal during my college days. I have also organized and
-							participated
-							in inter college blood donation drives through out my college days in India.</p>
+						<p>I have participated in various fundraising activities for cyclone-afflicted districts of Bengal during my college days. I have also organized and participated in inter-college blood donation drives throughout my college days in India.</p>
 					</div>
 				</div>
 			</div>
 		</section>
+		
 		<!-- Footer -->
 		<div id="footer">
 			<!-- Icons -->
