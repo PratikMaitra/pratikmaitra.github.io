@@ -45,9 +45,23 @@
 			margin: 0;
 		}
 
+		.education-list {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			grid-template-rows: repeat(2, auto);
+			grid-auto-flow: column;
+			gap: 0.75em 2em;
+		}
+
 		@media screen and (max-width: 736px) {
 			.profile-intro {
 				grid-template-columns: minmax(0, 1fr);
+			}
+
+			.education-list {
+				grid-template-columns: minmax(0, 1fr);
+				grid-template-rows: auto;
+				grid-auto-flow: row;
 			}
 		}
 
@@ -93,14 +107,6 @@
 
 		</div>
 
-		<!-- Banner -->
-		<section id="banner">
-			<header>
-				<h2><em>Artificial Intelligence Researcher</em></h2>
-
-			</header>
-		</section>
-
 		<main class="wrapper style1">
 			<div class="container">
 				<div class="profile-intro">
@@ -111,7 +117,7 @@
 				<div class="profile-grid">
 					<section class="box" aria-labelledby="education">
 						<h3 id="education"><u>Education</u></h3>
-						<ul>
+						<ul class="education-list">
 							<li><strong>Iowa State University</strong><br />Doctor of Philosophy, Computer Science, 2023–present</li>
 							<li><strong>Iowa State University</strong><br />Master’s in Artificial Intelligence, 2023–2026 (on the way to a PhD)</li>
 							<li><strong>University of Iowa</strong><br />Master’s in Computer Science, 2021–2023</li>
