@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Pratik Maitra | Computer Science Researcher</title>
+	<title>Pratik Maitra | Artificial Intelligence Researcher</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,13 +27,28 @@
 		}
 
 		.profile-intro {
+			display: grid;
+			grid-template-columns: minmax(0, 180px) minmax(0, 1fr);
+			align-items: start;
+			gap: 1.25em;
 			margin-bottom: 1.5em;
 		}
 
-		.profile-grid {
-			display: grid;
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-			gap: 10px;
+		.profile-intro img {
+			display: block;
+			width: 100%;
+			max-width: 180px;
+			height: auto;
+		}
+
+		.profile-intro p {
+			margin: 0;
+		}
+
+		@media screen and (max-width: 736px) {
+			.profile-intro {
+				grid-template-columns: minmax(0, 1fr);
+			}
 		}
 
 		.profile-grid .box {
@@ -49,14 +64,8 @@
 			margin-bottom: 0;
 		}
 
-		.profile-news {
-			grid-column: 1 / -1;
-		}
-
-		@media screen and (max-width: 736px) {
-			.profile-grid {
-				grid-template-columns: minmax(0, 1fr);
-			}
+		.profile-grid .box + .box {
+			margin-top: 10px;
 		}
 	</style>
 </head>
@@ -87,14 +96,17 @@
 		<!-- Banner -->
 		<section id="banner">
 			<header>
-				<h2><em>Computer Science Researcher</em></h2>
+				<h2><em>Artificial Intelligence Researcher</em></h2>
 
 			</header>
 		</section>
 
 		<main class="wrapper style1">
 			<div class="container">
-				<p class="profile-intro">I am a Ph.D. student in Computer Science at Iowa State University, advised by Professor Qi Li. I study how natural language processing can extract and organize information from text with limited labeled data.</p>
+				<div class="profile-intro">
+					<img src="images/pratik-maitra.jpg" alt="Pratik Maitra" width="1000" height="1000" />
+					<p>I am a Ph.D. student in Computer Science at Iowa State University, advised by Professor Qi Li. I study how natural language processing can extract and organize information from text with limited labeled data.</p>
+				</div>
 
 				<div class="profile-grid">
 					<section class="box" aria-labelledby="education">
@@ -107,13 +119,7 @@
 						</ul>
 					</section>
 
-					<section class="box" aria-labelledby="research-interests">
-						<h3 id="research-interests"><u>Research Interests</u></h3>
-						<p>My research focuses on information extraction and retrieval using natural language processing, particularly weak and distant supervision for information retrieval.</p>
-						<p>At the University of Iowa, I collaborated with Professors Tong Wang, Sena Chae, and Bijaya Adhikari on machine learning projects, including k-nearest-neighbor methods for graphs derived from hospital CAD drawings and named entity recognition in clinical notes.</p>
-					</section>
-
-					<section class="box profile-news" aria-labelledby="latest-news">
+					<section class="box" aria-labelledby="latest-news">
 						<h3 id="latest-news"><u>Latest News</u></h3>
 						<ul>
 							<li><time datetime="2026-11">November 2026</time> — <a href="https://aclanthology.org/2026.findings-aacl.106/">CLUE: A Contrastive Learning Framework for Unsupervised Event Type Induction and Annotation</a> appeared in <em>Findings of IJCNLP-AACL 2026</em>.</li>
